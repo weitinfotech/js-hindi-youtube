@@ -1,8 +1,24 @@
-const accountId= "abc"
-let a = "dipesh@gmail.com"
-var b= "21212"
+var greed =() =>{
+    var a=7
+ console.log(typeof(a));
+ console.log(a)
+}
+var a=6
 
-a="htllo@gamil.com"
-b="23455"
+var chill =()=>
+{
+    
+    console.log(a)
+}
 
-console.table([accountId,a,b])
+console.log(a)
+// diffrence b/w var and let
+/*
+let is block scoped and var is functioned scoped
+let don't alow redclare itself var allow
+hoisting aloowed in var not in let
+*/
+greed()
+chill()
+
+//console.table([accountId,a,b])
