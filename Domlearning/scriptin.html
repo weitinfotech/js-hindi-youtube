@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Using scripting in html</title>
+</head>
+<body>
+    <div class="Head">
+        <div class="child">Tuesday</div>
+        <div class="child">Monday</div>
+        <div class="child">Wednesday</div>
+        <div class="child">Thursday</div>
+        <div class="child">Friday</div>
+        <div class="child">Saturday</div>
+    </div>
+</body>
+<script>
+    //parent only
+    const parent= document.querySelector('.Head')
+    console.log(parent)
+    
+
+    //parent child using foreach
+     const parentchild= parent.children
+     console.log(parentchild)
+
+     parentchild[1].style.backgroundColor="green"
+
+     Array.from(parentchild).forEach((i)=> i.style.backgroundColor="yellow")
+     
+    //paretElemnet && nextsibling
+    const child= document.querySelector('.child')
+    console.log(parent.childNodes)
+    //childNodes
+</script>
+</html>
